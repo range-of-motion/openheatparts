@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" class="w-full h-auto">
+<style>.cab{fill:#fff;stroke:#2A2622;stroke-width:2.5}.cab-v2{fill:#FFFDF9;stroke-width:3}.cab-inner{fill:#FAF6F1;stroke:#E4DCD2;stroke-width:1.5}.coil{fill:#E6EEF6;stroke:#6E8CA8;stroke-width:1.5}.fin line{stroke:#9CB3C9;stroke-width:1.2}.grille{fill:#F1ECE5;stroke:#2A2622;stroke-width:2}.grille-ring{fill:none;stroke:#CFC6BB;stroke-width:1.5}.blades path{fill:#fff;stroke:#2A2622;stroke-width:1.8}.hub{fill:#2A2622}.divider{stroke:#D9CFC3;stroke-width:2;stroke-dasharray:6 6}.pipes path{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;opacity:.9}.pcb{fill:#DDEFE4;stroke:#3F7A57;stroke-width:1.8}.chip{fill:#2A2622}.cap{fill:#3B82C4;stroke:#1E4C78;stroke-width:1}.heatsink{fill:#C8CDD3;stroke:#7B838C}.valve{fill:#E3A26F;stroke:#8A4F24;stroke-width:1.5}.coilbox{fill:#2A2622}.comp{fill:#3A3632;stroke:#1C1A17;stroke-width:2}.comp-top{fill:#55504A}.comp-term{fill:#E8590C}.feet{fill:#8C857C}.phx{fill:#D8DDE3;stroke:#5E6873;stroke-width:1.8}.phx-lines path{stroke:#97A1AC;stroke-width:1.5;fill:none}.pump{fill:#C0392B;stroke:#7A1F16;stroke-width:2}.pump-eye{fill:#fff}.flow{fill:#fff;stroke:#2A2622;stroke-width:2}.flow-arrow{stroke:#3B82C4;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}.sensors circle,.sensors rect{fill:#F59E0B;stroke:#fff;stroke-width:2}.lbl{font:600 13px ui-sans-serif,system-ui,sans-serif;fill:#8C857C}.heater{fill:none;stroke:#E8590C;stroke-width:3;stroke-linecap:round}.crank{fill:#F59E0B;opacity:.85;stroke:#B45309;stroke-width:1.2}.part{transition:opacity .3s,filter .3s}</style>
+    <g data-part="casing" class="part"><rect class="cab cab-v2" x="40" y="50" width="720" height="440" rx="30"/></g>
+    <rect class="cab-inner" x="56" y="66" width="688" height="408" rx="14"/>
+    <g data-part="evaporator-coil" class="part">
+      <rect class="coil" x="70" y="76" width="350" height="34" rx="6"/>
+      <g class="fin"><line x1="77" y1="79" x2="77" y2="107"/><line x1="84" y1="79" x2="84" y2="107"/><line x1="91" y1="79" x2="91" y2="107"/><line x1="98" y1="79" x2="98" y2="107"/><line x1="105" y1="79" x2="105" y2="107"/><line x1="112" y1="79" x2="112" y2="107"/><line x1="119" y1="79" x2="119" y2="107"/><line x1="126" y1="79" x2="126" y2="107"/><line x1="133" y1="79" x2="133" y2="107"/><line x1="140" y1="79" x2="140" y2="107"/><line x1="147" y1="79" x2="147" y2="107"/><line x1="154" y1="79" x2="154" y2="107"/><line x1="161" y1="79" x2="161" y2="107"/><line x1="168" y1="79" x2="168" y2="107"/><line x1="175" y1="79" x2="175" y2="107"/><line x1="182" y1="79" x2="182" y2="107"/><line x1="189" y1="79" x2="189" y2="107"/><line x1="196" y1="79" x2="196" y2="107"/><line x1="203" y1="79" x2="203" y2="107"/><line x1="210" y1="79" x2="210" y2="107"/><line x1="217" y1="79" x2="217" y2="107"/><line x1="224" y1="79" x2="224" y2="107"/><line x1="231" y1="79" x2="231" y2="107"/><line x1="238" y1="79" x2="238" y2="107"/><line x1="245" y1="79" x2="245" y2="107"/><line x1="252" y1="79" x2="252" y2="107"/><line x1="259" y1="79" x2="259" y2="107"/><line x1="266" y1="79" x2="266" y2="107"/><line x1="273" y1="79" x2="273" y2="107"/><line x1="280" y1="79" x2="280" y2="107"/><line x1="287" y1="79" x2="287" y2="107"/><line x1="294" y1="79" x2="294" y2="107"/><line x1="301" y1="79" x2="301" y2="107"/><line x1="308" y1="79" x2="308" y2="107"/><line x1="315" y1="79" x2="315" y2="107"/><line x1="322" y1="79" x2="322" y2="107"/><line x1="329" y1="79" x2="329" y2="107"/><line x1="336" y1="79" x2="336" y2="107"/><line x1="343" y1="79" x2="343" y2="107"/><line x1="350" y1="79" x2="350" y2="107"/><line x1="357" y1="79" x2="357" y2="107"/><line x1="364" y1="79" x2="364" y2="107"/><line x1="371" y1="79" x2="371" y2="107"/><line x1="378" y1="79" x2="378" y2="107"/><line x1="385" y1="79" x2="385" y2="107"/><line x1="392" y1="79" x2="392" y2="107"/><line x1="399" y1="79" x2="399" y2="107"/><line x1="406" y1="79" x2="406" y2="107"/><line x1="413" y1="79" x2="413" y2="107"/></g>
+      <rect class="coil" x="70" y="110" width="26" height="350" rx="6"/>
+    </g>
+    <g data-part="fan" class="part">
+      <circle class="grille" cx="250" cy="285" r="160"/>
+      <circle class="grille-ring" cx="250" cy="285" r="125"/>
+      <circle class="grille-ring" cx="250" cy="285" r="88"/>
+      <g class="blades">
+        <path transform="rotate(0 250 285)" d="M250 285 C 262 220, 320 185, 345 205 C 330 245, 290 275, 250 285Z"/><path transform="rotate(120 250 285)" d="M250 285 C 262 220, 320 185, 345 205 C 330 245, 290 275, 250 285Z"/><path transform="rotate(240 250 285)" d="M250 285 C 262 220, 320 185, 345 205 C 330 245, 290 275, 250 285Z"/>
+      </g>
+      <circle class="hub" cx="250" cy="285" r="20"/>
+    </g>
+    <line class="divider" x1="440" y1="70" x2="440" y2="470"/>
+    <g class="pipes" stroke="#C9824A">
+      <path d="M560 270 V215 H495"/><path d="M470 220 V250 H420"/><path d="M545 225 V250 H660"/>
+      <path d="M610 330 H660"/><path d="M545 190 V160 H420"/>
+    </g>
+    <g data-part="control-board" class="part">
+      <rect class="pcb" x="555" y="80" width="175" height="92" rx="8"/>
+      <rect class="chip" x="572" y="96" width="34" height="26" rx="3"/><rect class="chip" x="616" y="96" width="22" height="22" rx="3"/>
+      <rect class="chip" x="650" y="96" width="62" height="14" rx="3"/><rect class="chip" x="650" y="118" width="40" height="14" rx="3"/>
+      <circle class="cap" cx="585" cy="148" r="10"/><circle class="cap" cx="611" cy="148" r="10"/>
+      <rect class="heatsink" x="640" y="140" width="76" height="22" rx="3"/>
+    </g>
+    <g data-part="four-way-valve" class="part">
+      <rect class="valve" x="452" y="196" width="46" height="22" rx="11"/><rect class="coilbox" x="462" y="182" width="22" height="14" rx="3"/>
+    </g>
+    <g data-part="expansion-valve" class="part">
+      <rect class="valve" x="535" y="188" width="20" height="36" rx="6"/><rect class="coilbox" x="531" y="176" width="28" height="16" rx="4"/>
+    </g>
+    <g data-part="compressor" class="part">
+      <rect class="comp" x="508" y="270" width="104" height="170" rx="30"/>
+      <ellipse class="comp-top" cx="560" cy="282" rx="48" ry="12"/>
+      <rect class="comp-term" x="545" y="300" width="30" height="20" rx="4"/>
+      <rect class="feet" x="498" y="436" width="124" height="10" rx="5"/>
+    </g>
+    <g data-part="plate-heat-exchanger" class="part">
+      <rect class="phx" x="660" y="225" width="62" height="150" rx="6"/>
+      <g class="phx-lines"><path d="M664 240 l54 -10"/><path d="M664 255 l54 -10"/><path d="M664 270 l54 -10"/><path d="M664 285 l54 -10"/><path d="M664 300 l54 -10"/><path d="M664 315 l54 -10"/><path d="M664 330 l54 -10"/><path d="M664 345 l54 -10"/><path d="M664 360 l54 -10"/></g>
+    </g>
+    <g class="pipes"><path stroke="#E8590C" d="M722 250 H770"/><path stroke="#3B82C4" d="M690 375 V402"/><path stroke="#3B82C4" d="M718 430 H770"/><path stroke="#3B82C4" d="M690 458 V470 H640 M585 470 H500"/></g>
+    <g data-part="circulation-pump" class="part">
+      <circle class="pump" cx="690" cy="430" r="28"/><circle class="pump-eye" cx="690" cy="430" r="10"/>
+      <rect class="coilbox" x="676" y="396" width="28" height="8" rx="3"/>
+    </g>
+    <g data-part="flow-meter" class="part"><rect class="flow" x="585" y="458" width="55" height="24" rx="8"/><path class="flow-arrow" d="M600 470 h22 m-6 -5 l6 5 -6 5"/></g>
+    <g data-part="bottom-plate-heater" class="part"><path class="heater" d="M110 462 q8 -10 16 0 t16 0 q8 -10 16 0 t16 0 q8 -10 16 0 t16 0 q8 -10 16 0 t16 0 q8 -10 16 0 t16 0 q8 -10 16 0 t16 0 q8 -10 16 0 t16 0 q8 -10 16 0 t16 0 q8 -10 16 0 t16 0 "/><path class="heater" d="M300 470 h110"/></g>
+    <g data-part="crankcase-heater" class="part"><rect class="crank" x="506" y="402" width="108" height="18" rx="6"/></g>
+    <g data-part="sensors" class="part sensors">
+      <circle cx="420" cy="250" r="6"/><circle cx="480" cy="160" r="6"/><circle cx="640" cy="330" r="6"/>
+      <circle cx="745" cy="250" r="6"/><circle cx="745" cy="430" r="6"/><circle cx="470" cy="470" r="6"/><circle cx="96" cy="300" r="6"/>
+      <rect x="455" y="425" width="30" height="16" rx="4"/>
+    </g>
+    <text class="lbl" x="772" y="244" text-anchor="end">CV out</text><text class="lbl" x="772" y="452" text-anchor="end">CV in</text>
+</svg>
