@@ -112,9 +112,46 @@
                     <p class="mt-2 text-sm text-stone-500">No shop links yet.</p>
                 @endforelse
 
-                <button disabled class="mt-3 w-full cursor-not-allowed rounded-xl border border-dashed border-stone-300 px-4 py-3 text-sm text-stone-500">
-                    + Suggest a link <span class="ml-1 rounded bg-stone-100 px-1.5 py-0.5 text-xs">coming soon</span>
-                </button>
+                @if (session('status'))
+                    <p class="mt-3 rounded-xl bg-green-50 px-3 py-2.5 text-sm text-green-700">{{ session('status') }}</p>
+                @endif
+
+                <details class="mt-3 rounded-xl border border-dashed border-stone-300" @if ($errors->any()) open @endif>
+                    <summary class="cursor-pointer list-none px-4 py-3 text-center text-sm font-medium text-stone-600 hover:text-stone-900">+ Suggest a link</summary>
+
+                    <form method="POST" action="{{ route('part-links.store', [$brand, $unit, $selected->part]) }}" class="space-y-3 border-t border-dashed border-stone-300 p-4">
+                        @csrf
+
+                        <div class="hidden" aria-hidden="true">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div>
+                            <label for="url" class="text-xs font-semibold uppercase tracking-wide text-stone-500">Link</label>
+                            <input type="url" id="url" name="url" value="{{ old('url') }}" required maxlength="2048" placeholder="https://"
+                                   class="mt-1 w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500">
+                            @error('url')
+                                <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <div>
+                            <label for="shop_name" class="text-xs font-semibold uppercase tracking-wide text-stone-500">Shop name</label>
+                            <input type="text" id="shop_name" name="shop_name" value="{{ old('shop_name') }}" required maxlength="100"
+                                   class="mt-1 w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500">
+                            @error('shop_name')
+                                <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        @error('website')
+                            <p class="text-xs text-red-600">{{ $message }}</p>
+                        @enderror
+
+                        <button type="submit" class="w-full rounded-xl bg-orange-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-orange-700">Submit link</button>
+                    </form>
+                </details>
                 <p class="mt-3 text-xs text-stone-400">Links are reviewed before they're listed.</p>
             @else
                 <div class="py-10 text-center">

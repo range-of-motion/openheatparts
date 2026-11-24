@@ -24,6 +24,17 @@ class PartLinkFactory extends Factory
             'user_id' => User::factory(),
             'url' => fake()->url(),
             'shop_name' => fake()->company(),
+            'approved_at' => now(),
         ];
+    }
+
+    /**
+     * Indicate that the link is awaiting review.
+     */
+    public function pending(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'approved_at' => null,
+        ]);
     }
 }
