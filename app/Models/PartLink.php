@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Database\Factories\PartLinkFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Attributes\Scope;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -28,5 +30,26 @@ class PartLink extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    /**
+     * Only links that have been reviewed and approved.
+     *
+     * @param  Builder<PartLink>  $query
+     */
+    #[Scope]
+    protected function approved(Builder $query): void
+    {
+        $query->whereNotNull('approved_at');
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'approved_at' => 'datetime',
+        ];
     }
 }

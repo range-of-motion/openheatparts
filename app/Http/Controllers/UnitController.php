@@ -11,7 +11,11 @@ class UnitController extends Controller
 {
     public function show(Brand $brand, Unit $unit, ?Part $part = null): View
     {
-        $unit->load(['brand', 'unitParts.part', 'unitParts.partLinks']);
+        $unit->load([
+            'brand',
+            'unitParts.part',
+            'unitParts.partLinks' => fn ($query) => $query->approved(),
+        ]);
 
         $diagramPath = $unit->diagram_path ? public_path($unit->diagram_path) : null;
 
