@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Enums\UnitType;
 use Database\Factories\UnitFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -16,6 +17,11 @@ class Unit extends Model
 {
     /** @use HasFactory<UnitFactory> */
     use HasFactory;
+
+    protected function fullName(): Attribute
+    {
+        return Attribute::get(fn () => trim($this->brand->name.' '.$this->name));
+    }
 
     /**
      * @return BelongsTo<Brand, $this>

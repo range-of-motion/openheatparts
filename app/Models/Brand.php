@@ -19,6 +19,6 @@ class Brand extends Model
      */
     public function units(): HasMany
     {
-        return $this->hasMany(Unit::class)->orderBy('name')->orderBy('id');
+        return $this->hasMany(Unit::class)->chaperone()->orderBy('name')->orderBy('id');
     }
 }
